@@ -1,0 +1,34 @@
+[[bin]]
+name = 'two-sum'
+path = 'src/0001.two-sum/solution.rs'
+
+[[bin]]
+name = 'add-two-numbers'
+path = 'src/0002.add-two-numbers/solution.rs'
+
+[[bin]]
+name = 'valid-parentheses'
+path = 'src/0020.valid-parentheses/solution.rs'
+
+[[bin]]
+name = 'merge-two-sorted-lists'
+path = 'src/0021.merge-two-sorted-lists/solution.rs'
+
+[[bin]]
+name = 'best-time-to-buy-and-sell-stock'
+path = 'src/0121.best-time-to-buy-and-sell-stock/solution.rs'
+
+[[bin]]
+name = 'valid-palindrome'
+path = 'src/0125.valid-palindrome/solution.rs'
+
+[dependencies]
+anyhow = '1.0.79'
+leetgo-rs = '0.2.1'
+serde = '1.0.196'
+serde_json = '1.0.113'
+
+[package]
+edition = '2021'
+name = 'leetcode-solutions'
+version = '0.1.0'
