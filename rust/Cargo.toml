@@ -22,6 +22,22 @@ path = 'src/0121.best-time-to-buy-and-sell-stock/solution.rs'
 name = 'valid-palindrome'
 path = 'src/0125.valid-palindrome/solution.rs'
 
+[[bin]]
+name = 'invert-binary-tree'
+path = 'src/0226.invert-binary-tree/solution.rs'
+
+[[bin]]
+name = 'valid-anagram'
+path = 'src/0242.valid-anagram/solution.rs'
+
+[[bin]]
+name = 'binary-search'
+path = 'src/0704.binary-search/solution.rs'
+
+[[bin]]
+name = 'flood-fill'
+path = 'src/0733.flood-fill/solution.rs'
+
 [dependencies]
 anyhow = '1.0.79'
 leetgo-rs = '0.2.1'
