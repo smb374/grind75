@@ -15,6 +15,22 @@ name = 'merge-two-sorted-lists'
 path = 'src/0021.merge-two-sorted-lists/solution.rs'
 
 [[bin]]
+name = 'maximum-subarray'
+path = 'src/0053.maximum-subarray/solution.rs'
+
+[[bin]]
+name = 'add-binary'
+path = 'src/0067.add-binary/solution.rs'
+
+[[bin]]
+name = 'climbing-stairs'
+path = 'src/0070.climbing-stairs/solution.rs'
+
+[[bin]]
+name = 'maximum-depth-of-binary-tree'
+path = 'src/0104.maximum-depth-of-binary-tree/solution.rs'
+
+[[bin]]
 name = 'balanced-binary-tree'
 path = 'src/0110.balanced-binary-tree/solution.rs'
 
@@ -25,6 +41,18 @@ path = 'src/0121.best-time-to-buy-and-sell-stock/solution.rs'
 [[bin]]
 name = 'valid-palindrome'
 path = 'src/0125.valid-palindrome/solution.rs'
+
+[[bin]]
+name = 'majority-element'
+path = 'src/0169.majority-element/solution.rs'
+
+[[bin]]
+name = 'reverse-linked-list'
+path = 'src/0206.reverse-linked-list/solution.rs'
+
+[[bin]]
+name = 'contains-duplicate'
+path = 'src/0217.contains-duplicate/solution.rs'
 
 [[bin]]
 name = 'invert-binary-tree'
@@ -43,12 +71,32 @@ name = 'valid-anagram'
 path = 'src/0242.valid-anagram/solution.rs'
 
 [[bin]]
+name = 'first-bad-version'
+path = 'src/0278.first-bad-version/solution.rs'
+
+[[bin]]
+name = 'ransom-note'
+path = 'src/0383.ransom-note/solution.rs'
+
+[[bin]]
+name = 'longest-palindrome'
+path = 'src/0409.longest-palindrome/solution.rs'
+
+[[bin]]
+name = 'diameter-of-binary-tree'
+path = 'src/0543.diameter-of-binary-tree/solution.rs'
+
+[[bin]]
 name = 'binary-search'
 path = 'src/0704.binary-search/solution.rs'
 
 [[bin]]
 name = 'flood-fill'
 path = 'src/0733.flood-fill/solution.rs'
+
+[[bin]]
+name = 'middle-of-the-linked-list'
+path = 'src/0876.middle-of-the-linked-list/solution.rs'
 
 [dependencies]
 anyhow = '1.0.79'
