@@ -15,6 +15,10 @@ name = 'merge-two-sorted-lists'
 path = 'src/0021.merge-two-sorted-lists/solution.rs'
 
 [[bin]]
+name = 'balanced-binary-tree'
+path = 'src/0110.balanced-binary-tree/solution.rs'
+
+[[bin]]
 name = 'best-time-to-buy-and-sell-stock'
 path = 'src/0121.best-time-to-buy-and-sell-stock/solution.rs'
 
@@ -25,6 +29,14 @@ path = 'src/0125.valid-palindrome/solution.rs'
 [[bin]]
 name = 'invert-binary-tree'
 path = 'src/0226.invert-binary-tree/solution.rs'
+
+[[bin]]
+name = 'implement-queue-using-stacks'
+path = 'src/0232.implement-queue-using-stacks/solution.rs'
+
+[[bin]]
+name = 'lowest-common-ancestor-of-a-binary-search-tree'
+path = 'src/0235.lowest-common-ancestor-of-a-binary-search-tree/solution.rs'
 
 [[bin]]
 name = 'valid-anagram'
