@@ -52,7 +52,8 @@ local testing.
 ## Week 3
 
 1. [Insert Interval](/rust/src/0057.insert-interval/question.md):
-   Find partition points as ranges then splice the range with updated interval
+   Find partition points for new interval's start (`|x| x[1] < new_interval[0]`)
+   and end (`|x| x[0] <= new_interval[1]`), then splice the range with merged interval
 2. [01 Matrix](/rust/src/0542.01-matrix/question.md): BFS
 3. [K Closest Points to Origin](/rust/src/0973.k-closest-points-to-origin/question.md):
    Worst linear time selection algorithm
