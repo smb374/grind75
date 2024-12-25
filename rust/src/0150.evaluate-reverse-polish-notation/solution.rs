@@ -8,6 +8,7 @@ use leetgo_rs::*;
 struct Solution;
 
 // @lc code=begin
+use std::ops::{Add, Div, Mul, Sub};
 
 impl Solution {
     pub fn eval_rpn(tokens: Vec<String>) -> i32 {
@@ -17,29 +18,19 @@ impl Solution {
         let mut stack = Vec::with_capacity(tokens.len());
         for tok in tokens {
             match tok.as_str() {
-                "+" => {
+                "+" | "-" | "*" | "/" => {
                     let b = stack.pop().expect("Malformed expression");
                     let a = stack.pop().expect("Maiformed expression");
-                    let r = a + b;
-                    stack.push(r);
-                }
-                "-" => {
-                    let b = stack.pop().expect("Malformed expression");
-                    let a = stack.pop().expect("Maiformed expression");
-                    let r = a - b;
-                    stack.push(r);
-                }
-                "*" => {
-                    let b = stack.pop().expect("Malformed expression");
-                    let a = stack.pop().expect("Maiformed expression");
-                    let r = a * b;
-                    stack.push(r);
-                }
-                "/" => {
-                    let b = stack.pop().expect("Malformed expression");
-                    let a = stack.pop().expect("Maiformed expression");
-                    let r = a / b;
-                    stack.push(r);
+
+                    let op = match tok.as_str() {
+                        "+" => i32::add,
+                        "-" => i32::sub,
+                        "*" => i32::mul,
+                        "/" => i32::div,
+                        _ => i32::add,
+                    };
+
+                    stack.push(op(a, b));
                 }
                 num => stack
                     .push(i32::from_str_radix(num, 10).expect("Should be numbers in this branch.")),
