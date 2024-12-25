@@ -45,22 +45,6 @@ Output: [0]
    such that we can merge the list conveniently without extra allocation.
 
     ```rust
-    // Definition for singly-linked list.
-    // #[derive(PartialEq, Eq, Clone, Debug)]
-    // pub struct ListNode {
-    //   pub val: i32,
-    //   pub next: Option<Box<ListNode>>
-    // }
-    //
-    // impl ListNode {
-    //   #[inline]
-    //   fn new(val: i32) -> Self {
-    //     ListNode {
-    //       next: None,
-    //       val
-    //     }
-    //   }
-    // }
     impl Solution {
         pub fn merge_two_lists(
             mut list1: Option<Box<ListNode>>,
@@ -85,22 +69,6 @@ Output: [0]
 2. Simple recursion based solution.
 
     ```rust
-    // Definition for singly-linked list.
-    // #[derive(PartialEq, Eq, Clone, Debug)]
-    // pub struct ListNode {
-    //   pub val: i32,
-    //   pub next: Option<Box<ListNode>>
-    // }
-    //
-    // impl ListNode {
-    //   #[inline]
-    //   fn new(val: i32) -> Self {
-    //     ListNode {
-    //       next: None,
-    //       val
-    //     }
-    //   }
-    // }
     impl Solution {
         pub fn merge_two_lists(
             mut list1: Option<Box<ListNode>>,

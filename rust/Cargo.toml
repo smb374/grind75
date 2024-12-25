@@ -39,6 +39,10 @@ name = 'climbing-stairs'
 path = 'src/0070.climbing-stairs/solution.rs'
 
 [[bin]]
+name = 'binary-tree-level-order-traversal'
+path = 'src/0102.binary-tree-level-order-traversal/solution.rs'
+
+[[bin]]
 name = 'maximum-depth-of-binary-tree'
 path = 'src/0104.maximum-depth-of-binary-tree/solution.rs'
 
@@ -53,6 +57,10 @@ path = 'src/0121.best-time-to-buy-and-sell-stock/solution.rs'
 [[bin]]
 name = 'valid-palindrome'
 path = 'src/0125.valid-palindrome/solution.rs'
+
+[[bin]]
+name = 'evaluate-reverse-polish-notation'
+path = 'src/0150.evaluate-reverse-polish-notation/solution.rs'
 
 [[bin]]
 name = 'majority-element'

@@ -1,0 +1,6 @@
+CompileFlags:
+    Add:
+        - "-I${workspaceFolder}/cpp"
+        - "-I${workspaceFolder}"
+        - "-I."
+        - "-I.."
