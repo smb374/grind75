@@ -39,3 +39,40 @@ An input string is valid if:
 
 - `1 <= s.length <= 10⁴`
 - `s` consists of parentheses only `'()[]{}'`.
+
+## My Answer
+
+For this one, use a stack to check if incoming right part closes stack top.
+
+```rust
+fn check_valid(lhs: Option<&char>, rhs: &char) -> bool {
+    match lhs {
+        Some(&'(') => *rhs == ')',
+        Some(&'[') => *rhs == ']',
+        Some(&'{') => *rhs == '}',
+        _ => false,
+    }
+}
+
+fn is_left(x: char) -> bool {
+    x == '(' || x == '[' || x == '{'
+}
+
+impl Solution {
+    pub fn is_valid(s: String) -> bool {
+        // Use a stack to push.
+        let mut stack: Vec<char> = Vec::with_capacity(s.len() >> 1);
+        for c in s.chars() {
+            if is_left(c) {
+                stack.push(c);
+            } else if check_valid(stack.last(), &c) {
+                // Remember to use last to detect empty stack.
+                stack.pop();
+            } else {
+                return false;
+            }
+        }
+        stack.is_empty()
+    }
+}
+```

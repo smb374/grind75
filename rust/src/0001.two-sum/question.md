@@ -40,3 +40,33 @@ Output: [0,1]
 - **Only one valid answer exists.**
 
 **Follow-up:** Can you come up with an algorithm that is less than `O(n²)` time complexity?
+
+## My Answer
+
+We can use a `HashMap<i32, usize>` to store the visited number & its index.
+When we hit 1 that's in the table, return the index.
+
+Time complexity: $`O(n)`$
+
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        // iterate nums and momorize visited valu and index with memo
+        // if we found (target - v) in memo, thats the answer.
+        let mut result = vec![-1, -1];
+        let mut memo = HashMap::with_capacity(nums.len());
+        for (i, &v) in nums.iter().enumerate() {
+            let diff = target - v;
+            if let Some(&j) = memo.get(&diff) {
+                result[0] = j as i32;
+                result[1] = i as i32;
+                break;
+            }
+            memo.insert(v, i);
+        }
+        result
+    }
+}
+```

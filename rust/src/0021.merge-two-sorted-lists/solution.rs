@@ -2,8 +2,6 @@
 // leetgo: 1.4.11
 // https://leetcode.com/problems/merge-two-sorted-lists/
 
-use std::i32;
-
 use anyhow::Result;
 use leetgo_rs::*;
 
