@@ -71,6 +71,10 @@ name = 'reverse-linked-list'
 path = 'src/0206.reverse-linked-list/solution.rs'
 
 [[bin]]
+name = 'course-schedule'
+path = 'src/0207.course-schedule/solution.rs'
+
+[[bin]]
 name = 'contains-duplicate'
 path = 'src/0217.contains-duplicate/solution.rs'
 
