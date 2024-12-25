@@ -7,6 +7,14 @@ name = 'add-two-numbers'
 path = 'src/0002.add-two-numbers/solution.rs'
 
 [[bin]]
+name = 'longest-substring-without-repeating-characters'
+path = 'src/0003.longest-substring-without-repeating-characters/solution.rs'
+
+[[bin]]
+name = '3sum'
+path = 'src/0015.3sum/solution.rs'
+
+[[bin]]
 name = 'valid-parentheses'
 path = 'src/0020.valid-parentheses/solution.rs'
 
