@@ -19,6 +19,10 @@ name = 'maximum-subarray'
 path = 'src/0053.maximum-subarray/solution.rs'
 
 [[bin]]
+name = 'insert-interval'
+path = 'src/0057.insert-interval/solution.rs'
+
+[[bin]]
 name = 'add-binary'
 path = 'src/0067.add-binary/solution.rs'
 
@@ -83,6 +87,10 @@ name = 'longest-palindrome'
 path = 'src/0409.longest-palindrome/solution.rs'
 
 [[bin]]
+name = '01-matrix'
+path = 'src/0542.01-matrix/solution.rs'
+
+[[bin]]
 name = 'diameter-of-binary-tree'
 path = 'src/0543.diameter-of-binary-tree/solution.rs'
 
@@ -97,6 +105,10 @@ path = 'src/0733.flood-fill/solution.rs'
 [[bin]]
 name = 'middle-of-the-linked-list'
 path = 'src/0876.middle-of-the-linked-list/solution.rs'
+
+[[bin]]
+name = 'k-closest-points-to-origin'
+path = 'src/0973.k-closest-points-to-origin/solution.rs'
 
 [dependencies]
 anyhow = '1.0.79'
