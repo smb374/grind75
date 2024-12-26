@@ -1,0 +1,17 @@
+input:
+["TimeMap","set","get","get","set","get","get"]
+[[],["foo","bar",1],["foo",1],["foo",3],["foo","bar2",4],["foo",4],["foo",5]]
+output:
+[null, null, "bar", "bar", null, "bar2", "bar2"]
+
+input:
+["TimeMap","set","set","get","get","get","get","get"]
+[[],["love","high",10],["love","low",20],["love",5],["love",10],["love",15],["love",20],["love",25]]
+output:
+[null,null,null,"","high","high","low","low"]
+
+input:
+["TimeMap","set","set","get","set","get","get"]
+[[],["a","bar",1],["x","b",3],["b",3],["foo","bar2",4],["foo",4],["foo",5]]
+output:
+[null,null,null,"",null,"bar2","bar2"]

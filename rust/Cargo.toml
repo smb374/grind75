@@ -39,6 +39,10 @@ name = 'maximum-subarray'
 path = 'src/0053.maximum-subarray/solution.rs'
 
 [[bin]]
+name = 'merge-intervals'
+path = 'src/0056.merge-intervals/solution.rs'
+
+[[bin]]
 name = 'insert-interval'
 path = 'src/0057.insert-interval/solution.rs'
 
@@ -49,6 +53,10 @@ path = 'src/0067.add-binary/solution.rs'
 [[bin]]
 name = 'climbing-stairs'
 path = 'src/0070.climbing-stairs/solution.rs'
+
+[[bin]]
+name = 'sort-colors'
+path = 'src/0075.sort-colors/solution.rs'
 
 [[bin]]
 name = 'validate-binary-search-tree'
@@ -119,6 +127,10 @@ name = 'lowest-common-ancestor-of-a-binary-search-tree'
 path = 'src/0235.lowest-common-ancestor-of-a-binary-search-tree/solution.rs'
 
 [[bin]]
+name = 'lowest-common-ancestor-of-a-binary-tree'
+path = 'src/0236.lowest-common-ancestor-of-a-binary-tree/solution.rs'
+
+[[bin]]
 name = 'product-of-array-except-self'
 path = 'src/0238.product-of-array-except-self/solution.rs'
 
@@ -155,6 +167,10 @@ name = 'binary-search'
 path = 'src/0704.binary-search/solution.rs'
 
 [[bin]]
+name = 'accounts-merge'
+path = 'src/0721.accounts-merge/solution.rs'
+
+[[bin]]
 name = 'flood-fill'
 path = 'src/0733.flood-fill/solution.rs'
 
@@ -165,6 +181,10 @@ path = 'src/0876.middle-of-the-linked-list/solution.rs'
 [[bin]]
 name = 'k-closest-points-to-origin'
 path = 'src/0973.k-closest-points-to-origin/solution.rs'
+
+[[bin]]
+name = 'time-based-key-value-store'
+path = 'src/0981.time-based-key-value-store/solution.rs'
 
 [[bin]]
 name = 'rotting-oranges'

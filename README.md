@@ -19,7 +19,7 @@ local testing.
 8. [Binary Search](/rust/src/0704.binary-search/question.md): Binary Search
 9. [Flood Fill](/rust/src/0733.flood-fill/question.md): BFS
 10. [Lowest Common Ancestor of a Binary Search Tree](/rust/src/0235.lowest-common-ancestor-of-a-binary-search-tree/question.md):
-    DFS
+    DFS on one child by BST's property.
 11. [Balanced Binary Tree](/rust/src/0110.balanced-binary-tree/question.md):
     Recursive tree height building
 12. [Linked List Cycle](/go/0141.linked-list-cycle/question.md)
@@ -101,3 +101,25 @@ local testing.
    Backtracking
 3. [Permutations](/rust/src/0046.permutations/question.md):
    Backtracking
+4. [Merge Intervals](/rust/src/0056.merge-intervals/question.md):
+   Sort the intervals the push the first interval into result vec.
+   For the rest intervals `i`, merge if `i.start < result[idx].end`,
+   or push interval then increase idx.
+5. [Lowest Common Ancestor of a Binary Tree](/rust/src/0236.lowest-common-ancestor-of-a-binary-tree/question.md):
+   Unlike the [BST](/rust/src/0235.lowest-common-ancestor-of-a-binary-search-tree/question.md)
+   one, we need to visit both children in the DFS routine in recursive fashion than
+   direct return.
+6. [Time Based Key-Value Store](/rust/src/0981.time-based-key-value-store/question.md):
+   Use a hash map to store a vector of tuples `(timestamp, item)`.
+   - set: Push the tuple
+   - get: binary search the item where its timestamp <= argument's timestamp.
+7. [Accounts Merge](/rust/src/0721.accounts-merge/question.md):
+   Use union-find by rank to union the accounts that shares the same email
+   (use email to account index table for lookup), then merge the emails with
+   the same root to the same account, then finally sort the emails before return.
+
+8. [Sort Colors](/rust/src/0075.sort-colors/question.md):
+   - 2-pass counting sort: count 0s and 1s in first pass, then sort nums.
+   - 1-pass 3-pointers: Use `lo` for upper limit of 0s, `hi` for lower limit of 2s,
+     and `i` to step. `swap(i, lo); i++; lo++` if `nums[i] == 0`,
+     `swap(i, hi); hi--` if `nums[i] == 2`, `i++` otherwise while `i <= hi`.
