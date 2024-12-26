@@ -72,3 +72,22 @@ local testing.
 
 1. [Course Schedule](/rust/src/0207.course-schedule/question.md):
    Topological Sort using DFS with 3-state mark to detect cycle
+2. [Implement Trie (Prefix Tree)](/rust/src/0208.implement-trie-prefix-tree/question.md):
+   Use `[Option<Box<Node>>; 26]` as children as only lower case alphas in input.
+3. [Coin Change](/rust/src/0322.coin-change/question.md):
+   Use 1-D DP based on each coin value (`mem[i] = mem[i].min(mem[i - c] + 1)`).
+4. [Product of Array Except Self](/rust/src/0238.product-of-array-except-self/question.md):
+   - Use a vec of tuples to record prefix & suffix product of index,
+     then `.map(|(x, y)| x * y).collect()`
+   - Use 2 variables to track current prefix & suffix product.
+5. [Min Stack](/rust/src/0155.min-stack/question.md):
+   Use another stack `previous_min` to record minimums for each push operation.
+6. [Validate Binary Search Tree](/rust/src/0098.validate-binary-search-tree/question.md):
+   Use in-order traversal and record visited values in order then
+   validate the record is strict ascending with `.windows(2).all(|w| w[0] < w[1])`.
+7. [Number of Islands](/rust/src/0200.number-of-islands/question.md):
+   Use BFS like routine to overwrite neighboring 1s to 0s on encountered 1s,
+   update count before routine start.
+8. [Rotting Oranges](/rust/src/0994.rotting-oranges/question.md):
+   Use multi-source BFS and visited table to prevent overstepping,
+   update max count during BFS, then check if there are remaining 1s.

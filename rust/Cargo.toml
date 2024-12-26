@@ -39,6 +39,10 @@ name = 'climbing-stairs'
 path = 'src/0070.climbing-stairs/solution.rs'
 
 [[bin]]
+name = 'validate-binary-search-tree'
+path = 'src/0098.validate-binary-search-tree/solution.rs'
+
+[[bin]]
 name = 'binary-tree-level-order-traversal'
 path = 'src/0102.binary-tree-level-order-traversal/solution.rs'
 
@@ -63,8 +67,16 @@ name = 'evaluate-reverse-polish-notation'
 path = 'src/0150.evaluate-reverse-polish-notation/solution.rs'
 
 [[bin]]
+name = 'min-stack'
+path = 'src/0155.min-stack/solution.rs'
+
+[[bin]]
 name = 'majority-element'
 path = 'src/0169.majority-element/solution.rs'
+
+[[bin]]
+name = 'number-of-islands'
+path = 'src/0200.number-of-islands/solution.rs'
 
 [[bin]]
 name = 'reverse-linked-list'
@@ -73,6 +85,10 @@ path = 'src/0206.reverse-linked-list/solution.rs'
 [[bin]]
 name = 'course-schedule'
 path = 'src/0207.course-schedule/solution.rs'
+
+[[bin]]
+name = 'implement-trie-prefix-tree'
+path = 'src/0208.implement-trie-prefix-tree/solution.rs'
 
 [[bin]]
 name = 'contains-duplicate'
@@ -91,12 +107,20 @@ name = 'lowest-common-ancestor-of-a-binary-search-tree'
 path = 'src/0235.lowest-common-ancestor-of-a-binary-search-tree/solution.rs'
 
 [[bin]]
+name = 'product-of-array-except-self'
+path = 'src/0238.product-of-array-except-self/solution.rs'
+
+[[bin]]
 name = 'valid-anagram'
 path = 'src/0242.valid-anagram/solution.rs'
 
 [[bin]]
 name = 'first-bad-version'
 path = 'src/0278.first-bad-version/solution.rs'
+
+[[bin]]
+name = 'coin-change'
+path = 'src/0322.coin-change/solution.rs'
 
 [[bin]]
 name = 'ransom-note'
@@ -129,6 +153,10 @@ path = 'src/0876.middle-of-the-linked-list/solution.rs'
 [[bin]]
 name = 'k-closest-points-to-origin'
 path = 'src/0973.k-closest-points-to-origin/solution.rs'
+
+[[bin]]
+name = 'rotting-oranges'
+path = 'src/0994.rotting-oranges/solution.rs'
 
 [dependencies]
 anyhow = '1.0.79'
