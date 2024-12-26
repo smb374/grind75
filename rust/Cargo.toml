@@ -23,6 +23,18 @@ name = 'merge-two-sorted-lists'
 path = 'src/0021.merge-two-sorted-lists/solution.rs'
 
 [[bin]]
+name = 'search-in-rotated-sorted-array'
+path = 'src/0033.search-in-rotated-sorted-array/solution.rs'
+
+[[bin]]
+name = 'combination-sum'
+path = 'src/0039.combination-sum/solution.rs'
+
+[[bin]]
+name = 'permutations'
+path = 'src/0046.permutations/solution.rs'
+
+[[bin]]
 name = 'maximum-subarray'
 path = 'src/0053.maximum-subarray/solution.rs'
 

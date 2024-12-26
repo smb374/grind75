@@ -91,3 +91,13 @@ local testing.
 8. [Rotting Oranges](/rust/src/0994.rotting-oranges/question.md):
    Use multi-source BFS and visited table to prevent overstepping,
    update max count during BFS, then check if there are remaining 1s.
+
+## Week 5
+
+1. [Search in Rotated Sorted Array](/rust/src/0033.search-in-rotated-sorted-array/question.md):
+   Rotated Sorted:
+   `arr[0] < arr[peak] && arr[len(arr) - 1] < arr[peak] && arr[len(arr - 1)] < arr[0]`
+2. [Combination Sum](/rust/src/0039.combination-sum/question.md):
+   Backtracking
+3. [Permutations](/rust/src/0046.permutations/question.md):
+   Backtracking
