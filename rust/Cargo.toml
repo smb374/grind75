@@ -11,8 +11,24 @@ name = 'longest-substring-without-repeating-characters'
 path = 'src/0003.longest-substring-without-repeating-characters/solution.rs'
 
 [[bin]]
+name = 'longest-palindromic-substring'
+path = 'src/0005.longest-palindromic-substring/solution.rs'
+
+[[bin]]
+name = 'string-to-integer-atoi'
+path = 'src/0008.string-to-integer-atoi/solution.rs'
+
+[[bin]]
+name = 'container-with-most-water'
+path = 'src/0011.container-with-most-water/solution.rs'
+
+[[bin]]
 name = '3sum'
 path = 'src/0015.3sum/solution.rs'
+
+[[bin]]
+name = 'letter-combinations-of-a-phone-number'
+path = 'src/0017.letter-combinations-of-a-phone-number/solution.rs'
 
 [[bin]]
 name = 'valid-parentheses'
@@ -23,12 +39,20 @@ name = 'merge-two-sorted-lists'
 path = 'src/0021.merge-two-sorted-lists/solution.rs'
 
 [[bin]]
+name = 'merge-k-sorted-lists'
+path = 'src/0023.merge-k-sorted-lists/solution.rs'
+
+[[bin]]
 name = 'search-in-rotated-sorted-array'
 path = 'src/0033.search-in-rotated-sorted-array/solution.rs'
 
 [[bin]]
 name = 'combination-sum'
 path = 'src/0039.combination-sum/solution.rs'
+
+[[bin]]
+name = 'trapping-rain-water'
+path = 'src/0042.trapping-rain-water/solution.rs'
 
 [[bin]]
 name = 'permutations'
@@ -39,12 +63,20 @@ name = 'maximum-subarray'
 path = 'src/0053.maximum-subarray/solution.rs'
 
 [[bin]]
+name = 'spiral-matrix'
+path = 'src/0054.spiral-matrix/solution.rs'
+
+[[bin]]
 name = 'merge-intervals'
 path = 'src/0056.merge-intervals/solution.rs'
 
 [[bin]]
 name = 'insert-interval'
 path = 'src/0057.insert-interval/solution.rs'
+
+[[bin]]
+name = 'unique-paths'
+path = 'src/0062.unique-paths/solution.rs'
 
 [[bin]]
 name = 'add-binary'
@@ -59,6 +91,22 @@ name = 'sort-colors'
 path = 'src/0075.sort-colors/solution.rs'
 
 [[bin]]
+name = 'minimum-window-substring'
+path = 'src/0076.minimum-window-substring/solution.rs'
+
+[[bin]]
+name = 'subsets'
+path = 'src/0078.subsets/solution.rs'
+
+[[bin]]
+name = 'word-search'
+path = 'src/0079.word-search/solution.rs'
+
+[[bin]]
+name = 'largest-rectangle-in-histogram'
+path = 'src/0084.largest-rectangle-in-histogram/solution.rs'
+
+[[bin]]
 name = 'validate-binary-search-tree'
 path = 'src/0098.validate-binary-search-tree/solution.rs'
 
@@ -69,6 +117,10 @@ path = 'src/0102.binary-tree-level-order-traversal/solution.rs'
 [[bin]]
 name = 'maximum-depth-of-binary-tree'
 path = 'src/0104.maximum-depth-of-binary-tree/solution.rs'
+
+[[bin]]
+name = 'construct-binary-tree-from-preorder-and-inorder-traversal'
+path = 'src/0105.construct-binary-tree-from-preorder-and-inorder-traversal/solution.rs'
 
 [[bin]]
 name = 'balanced-binary-tree'
@@ -83,6 +135,18 @@ name = 'valid-palindrome'
 path = 'src/0125.valid-palindrome/solution.rs'
 
 [[bin]]
+name = 'word-ladder'
+path = 'src/0127.word-ladder/solution.rs'
+
+[[bin]]
+name = 'word-break'
+path = 'src/0139.word-break/solution.rs'
+
+[[bin]]
+name = 'lru-cache'
+path = 'src/0146.lru-cache/solution.rs'
+
+[[bin]]
 name = 'evaluate-reverse-polish-notation'
 path = 'src/0150.evaluate-reverse-polish-notation/solution.rs'
 
@@ -93,6 +157,10 @@ path = 'src/0155.min-stack/solution.rs'
 [[bin]]
 name = 'majority-element'
 path = 'src/0169.majority-element/solution.rs'
+
+[[bin]]
+name = 'binary-tree-right-side-view'
+path = 'src/0199.binary-tree-right-side-view/solution.rs'
 
 [[bin]]
 name = 'number-of-islands'
@@ -115,8 +183,16 @@ name = 'contains-duplicate'
 path = 'src/0217.contains-duplicate/solution.rs'
 
 [[bin]]
+name = 'basic-calculator'
+path = 'src/0224.basic-calculator/solution.rs'
+
+[[bin]]
 name = 'invert-binary-tree'
 path = 'src/0226.invert-binary-tree/solution.rs'
+
+[[bin]]
+name = 'kth-smallest-element-in-a-bst'
+path = 'src/0230.kth-smallest-element-in-a-bst/solution.rs'
 
 [[bin]]
 name = 'implement-queue-using-stacks'
@@ -143,6 +219,18 @@ name = 'first-bad-version'
 path = 'src/0278.first-bad-version/solution.rs'
 
 [[bin]]
+name = 'find-median-from-data-stream'
+path = 'src/0295.find-median-from-data-stream/solution.rs'
+
+[[bin]]
+name = 'serialize-and-deserialize-binary-tree'
+path = 'src/0297.serialize-and-deserialize-binary-tree/solution.rs'
+
+[[bin]]
+name = 'minimum-height-trees'
+path = 'src/0310.minimum-height-trees/solution.rs'
+
+[[bin]]
 name = 'coin-change'
 path = 'src/0322.coin-change/solution.rs'
 
@@ -155,12 +243,24 @@ name = 'longest-palindrome'
 path = 'src/0409.longest-palindrome/solution.rs'
 
 [[bin]]
+name = 'partition-equal-subset-sum'
+path = 'src/0416.partition-equal-subset-sum/solution.rs'
+
+[[bin]]
+name = 'find-all-anagrams-in-a-string'
+path = 'src/0438.find-all-anagrams-in-a-string/solution.rs'
+
+[[bin]]
 name = '01-matrix'
 path = 'src/0542.01-matrix/solution.rs'
 
 [[bin]]
 name = 'diameter-of-binary-tree'
 path = 'src/0543.diameter-of-binary-tree/solution.rs'
+
+[[bin]]
+name = 'task-scheduler'
+path = 'src/0621.task-scheduler/solution.rs'
 
 [[bin]]
 name = 'binary-search'
@@ -189,6 +289,10 @@ path = 'src/0981.time-based-key-value-store/solution.rs'
 [[bin]]
 name = 'rotting-oranges'
 path = 'src/0994.rotting-oranges/solution.rs'
+
+[[bin]]
+name = 'maximum-profit-in-job-scheduling'
+path = 'src/1235.maximum-profit-in-job-scheduling/solution.rs'
 
 [dependencies]
 anyhow = '1.0.79'

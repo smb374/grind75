@@ -123,3 +123,73 @@ local testing.
    - 1-pass 3-pointers: Use `lo` for upper limit of 0s, `hi` for lower limit of 2s,
      and `i` to step. `swap(i, lo); i++; lo++` if `nums[i] == 0`,
      `swap(i, hi); hi--` if `nums[i] == 2`, `i++` otherwise while `i <= hi`.
+
+## Week 6
+
+1. [Word Break](/rust/src/0139.word-break/question.md):
+   DFS with momoization on index,
+   which indicates we can segment the string to a word in words starting from index.
+2. [Partition Equal Subset Sum](/rust/src/0416.partition-equal-subset-sum/question.md):
+   0/1 Knapsack DP,
+   - Add the array and check if total is even, odd -> we can't divide.
+   - Set `target = total >> 1`
+   - Initialize DP array `mem` with false and size of `target + 1`,
+     set `mem[0] = true`.
+   - For each number `n`, we iterate `i` from `target` down to `n` with
+     `mem[i] = mem[i] || mem[i - n]`,
+     which means taking `(i - n)` or not (hence 0/1 Knapsack).
+   - If `mem[target] == true` in the loop, stop and return true,
+     otherwise return false after we iterated all numbers.
+3. [String to Integer (atoi)](/rust/src/0008.string-to-integer-atoi/question.md):
+   Check the sign and the starting index with `s[0]`, then take iterate
+   all the digits from start and update the accumulator, finally apply the sign.
+4. [Spiral Matrix](/rust/src/0054.spiral-matrix/question.md):
+   Maintain a visited matrix and perform spiral walk with `RDLU` direction.
+5. [Subsets](/rust/src/0078.subsets/question.md):
+   DFS backtracking with 2 branch: take current number or not.
+6. [Binary Tree Right Side View](/rust/src/0199.binary-tree-right-side-view/question.md):
+   BFS in a level fashion and push right instead of left first to the queue.
+7. [Longest Palindromic Substring](/rust/src/0005.longest-palindromic-substring/question.md):
+   For each index, expand and record the largest start and end index of a palindrome.
+   Remember to check both even (start: `i` & `i+1`) and odd (start: `i` & `i`) palindromes.
+8. [Unique Paths](/rust/src/0062.unique-paths/question.md):
+   2D DP on the `m x n` grid:
+   - If one of `m` or `n` is 0, return 0
+   - Initialize a `m x n` 2D DP array `path` with 0
+   - For each cell
+     - If `i==0 || j==0`, `path[i][j] = 1` as there's only 1 path to `(i, j)`
+     - Else `path[i][j] = path[i][j-1] + path[i-1][j]`
+   - Return `path[m-1][n-1]`
+9. [Construct Binary Tree from Preorder and Inorder Traversal](/rust/src/0105.construct-binary-tree-from-preorder-and-inorder-traversal/question.md):
+   DFS explore the pre-order walk array
+   `dfs(preorder, inorder_index, pre_idx, in_idx, size)`:
+   - In each DFS iteration, get `val = preorder[pre_idx]`, `idx = inorder_index[val]`,
+     `left_size = idx-in_idx`.
+   - Explore left to get left sub tree:
+     `left = dfs(preorder, inorder_index, pre_idx+1, in_idx, left_size)`
+   - Explore right to get right sub tree:
+     `right = dfs(preorder, inorder_index, pre_idx+1+left_size, idx+1, size-1-left_size)`
+   - Return a new node with `Node {val, left, right}`
+
+## Week 7
+
+1. [Container With Most Water](/rust/src/0011.container-with-most-water/question.md)
+2. [Letter Combinations of a Phone Number](/rust/src/0017.letter-combinations-of-a-phone-number/question.md)
+3. [Word Search](/rust/src/0079.word-search/question.md)
+4. [Find All Anagrams in a String](/rust/src/0438.find-all-anagrams-in-a-string/question.md)
+5. [Minimum Height Trees](/rust/src/0310.minimum-height-trees/question.md)
+6. [Task Scheduler](/rust/src/0621.task-scheduler/question.md)
+7. [LRU Cache](/rust/src/0146.lru-cache/question.md)
+
+## Week 8
+
+1. [Kth Smallest Element in a BST](/rust/src/0230.kth-smallest-element-in-a-bst/question.md)
+2. [Minimum Window Substring](/cpp/0076.minimum-window-substring/question.md)
+3. [Serialize and Deserialize Binary Tree](/rust/src/0297.serialize-and-deserialize-binary-tree/question.md)
+4. [Trapping Rain Water](/rust/src/0042.trapping-rain-water/question.md)
+5. [Find Median from Data Stream](/rust/src/0295.find-median-from-data-stream/question.md)
+6. [Word Ladder](/rust/src/0127.word-ladder/question.md)
+7. [Basic Calculator](/rust/src/0224.basic-calculator/question.md)
+8. [Maximum Profit in Job Scheduling](/rust/src/1235.maximum-profit-in-job-scheduling/question.md)
+9. [Merge k Sorted Lists](/rust/src/0023.merge-k-sorted-lists/question.md)
+10. [Largest Rectangle in Histogram](/rust/src/0084.largest-rectangle-in-histogram/question.md)
